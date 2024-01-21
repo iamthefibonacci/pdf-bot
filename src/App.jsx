@@ -1,5 +1,5 @@
 import axios from 'axios';
-import  { useState } from 'react';
+import { useState } from 'react';
 
 function App() {
   const [userMessage, setUserMessage] = useState('');
@@ -32,6 +32,9 @@ function App() {
       });
 
       setResponseMessage(`Received message: ${userMessage}, ChatPDF Response: ${responseChat.data}`);
+
+      // Clear the userMessage after successfully sending the message
+      setUserMessage('');
     } catch (error) {
       console.error(error);
       setResponseMessage('An error occurred while processing the request.');
@@ -40,11 +43,11 @@ function App() {
 
   return (
     <div className="container mx-auto p-4 space-x-10 flex-col">
-      <div className="px-[500px] gap-4 place-items-center text-xl mb-4 text-blue-800">Pdf 
-      <span className='text-yellow-900'>Bot</span>
+      <div className="text-center mb-4 text-xl text-blue-800">
+        Pdf <span className='text-yellow-900'>Bot</span>
       </div>
       <div className="flex mb-4 relative">
-        <label className="mr-2 flex items-center flex-grow">
+        <label className="mr-2 flex items-center flex-grow text-blue-900">
           Enter your message:
           <input
             type="text"
@@ -53,17 +56,18 @@ function App() {
             onChange={(e) => setUserMessage(e.target.value)}
           />
         </label>
-        <button className="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 rounded-md" onClick={sendMessage}>
-          send message
+        <button
+          className="bg-blue-500 hover:bg-blue-600 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 rounded-md"
+          onClick={sendMessage}
+        >
+          Send Message
         </button>
       </div>
-      <div className='mb-64  items-center justify-center absolute inset-x-0 border border-black bg-white px-32 rounded-md '>
-      <p className="my-10 text-lg">{responseMessage}</p>
+      <div className='mb-8 border border-black bg-white p-4 rounded-md'>
+        <p className="text-lg">{responseMessage}</p>
       </div>
-      
     </div>
   );
 }
 
 export default App;
-
