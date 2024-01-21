@@ -57,13 +57,13 @@ function App() {
           />
         </label>
         <button
-          className="bg-blue-500 hover:bg-blue-600 active:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 rounded-md"
+          className="  shadow-teal-700 shadow-md placeholder:text-blue-900 rounded-md "
           onClick={sendMessage}
         >
           Send Message
         </button>
       </div>
-      <div className='mb-8 border border-black bg-white p-4 rounded-md'>
+      <div className='mb-8 border border-black bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
         <p className="text-lg">{responseMessage}</p>
       </div>
     </div>
