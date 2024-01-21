@@ -43,12 +43,12 @@ function App() {
 
   return (
     <div className="container mx-auto p-4 space-x-10 flex-col">
-      <div className="text-center mb-4 text-xl text-blue-800">
-        Pdf <span className='text-yellow-900'>Bot</span>
+      <div className="text-center mb-4 text-3xl text-blue-800">
+        PDF BOT
       </div>
       <div className="flex mb-4 relative">
         <label className="mr-2 flex items-center flex-grow text-blue-900">
-          Enter your message:
+         <h3 className="text-start text-4xl">Enter message:</h3> 
           <input
             type="text"
             className="w-full focus:outline-none shadow-teal-700 shadow-xl placeholder:text-gray-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600 "
@@ -57,10 +57,10 @@ function App() {
           />
         </label>
         <button
-          className="  shadow-teal-700 shadow-md placeholder:text-blue-900 rounded-md "
+          className="  shadow-teal-700 shadow-md placeholder:text-blue-900 rounded-md  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
           onClick={sendMessage}
         >
-          Send Message
+          <h3 className="p-5 text-blue-900">send message</h3>
         </button>
       </div>
       <div className='mb-8 border border-black bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
