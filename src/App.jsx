@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className="container mx-auto p-4 space-x-10 flex-col">
-      <div className="px-[500px] gap-4 place-items-center text-xl mb-4 text-blue-800">pdf 
+      <div className="px-[500px] gap-4 place-items-center text-xl mb-4 text-blue-800">Pdf 
       <span className='text-yellow-900'>Bot</span>
       </div>
       <div className="flex mb-4 relative">
