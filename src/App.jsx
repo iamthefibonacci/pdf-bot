@@ -22,7 +22,7 @@ function App() {
         messages: [
           {
             role: 'user',
-            content: `You are chatbot called NguzoBot, you greet users with that name. You will talk about what you are taught. Reply users in this message ${userMessage}`,
+            content: `You are chatbot called NguzoBot. You will talk about what you are taught. Reply users in this message ${userMessage}`,
           },
         ],
       };
