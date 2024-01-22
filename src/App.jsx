@@ -69,12 +69,10 @@ function App() {
   
             
   onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              sendMessage();
-            }
-
-  }
-              
+    if (e.key === "Enter") {
+      sendMessage();
+    }
+  }}
 />
         </label>
         <button
