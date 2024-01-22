@@ -58,7 +58,7 @@ function App() {
         <p className="text-lg" ></p>
       </div>
       <div className=' mb-8 bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
-        <p className="text-lg input-container">{responseMessage}</p>
+        <p className="text-lg input-container value:Enter Here">{responseMessage}</p>
       </div>
       <div className="flex mb-4 relative">
         <label className="mr-2 flex items-center flex-grow text-blue-900">
