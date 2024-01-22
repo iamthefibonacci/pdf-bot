@@ -52,7 +52,7 @@ function App() {
         <br/>
         <p>Talk to me and ask me anything about NguzoAI.</p>
          <p></p>
-        <p>** Press ENTER after typing your question. **</p>
+        <p>** Press <span> ENTER after typing your question.</span> **</p>
       </div>
       <div className='mb-8  bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
         <p className="text-lg" ></p>
