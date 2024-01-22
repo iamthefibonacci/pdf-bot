@@ -22,7 +22,7 @@ function App() {
         messages: [
           {
             role: 'user',
-            content: `You are chatbot called NguzoBot. You will talk about what you are taught. Reply users in this message ${userMessage}`,
+            content: `You are chatbot called NguzoBot. You will not talk about anything outside NguzoAI or in the pdf. Reply users in this message ${userMessage}`,
           },
         ],
       };
@@ -55,7 +55,7 @@ function App() {
       <div className='mb-8  bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
         <p className="text-lg" ></p>
       </div>
-      <div className='mb-8   bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
+      <div className='input-container mb-8 bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
         <p className="text-lg">{responseMessage}</p>
       </div>
       <div className="flex mb-4 relative">
@@ -66,6 +66,15 @@ function App() {
   className="input-container focus:outline-none shadow-teal-700 placeholder:text-gray-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600"
   value={userMessage}
   onChange={(e) => setUserMessage(e.target.value)}
+  
+            
+  onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              sendMessage();
+            }
+
+
+              
 />
         </label>
         <button
