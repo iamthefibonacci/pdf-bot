@@ -51,6 +51,7 @@ function App() {
       <div className="text-center mb-4 text-1xl text-blue-900">
         <br/>
         <p>Talk to me and ask me anything about NguzoAI.</p>
+        <p>** Press ENTER sfter typing your question. **</p>
       </div>
       <div className='mb-8  bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
         <p className="text-lg" ></p>
