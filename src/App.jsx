@@ -58,14 +58,14 @@ function App() {
         <p className="text-lg" ></p>
       </div>
       <div className=' mb-8 bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
-        <p className="text-lg input-container value:Enter Here">{responseMessage}</p>
+        <p className="text-lg input-container ">{responseMessage}</p>
       </div>
       <div className="flex mb-4 relative">
         <label className="mr-2 flex items-center flex-grow text-blue-900">
          <h3 className="text-start"></h3> 
           <input
   type="text"
-  className="input-container focus:outline-none shadow-teal-700 placeholder:text-gray-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600"
+  className="input-container focus:outline-none shadow-teal-700 placeholder:text-gray-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600 value:Enter Here"
   value={userMessage}
   onChange={(e) => setUserMessage(e.target.value)}    
   onKeyDown={(e) => {
