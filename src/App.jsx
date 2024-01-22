@@ -73,7 +73,7 @@ function App() {
               sendMessage();
             }
 
-
+  }
               
 />
         </label>
