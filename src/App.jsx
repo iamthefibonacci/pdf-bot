@@ -63,7 +63,7 @@ function App() {
          <h3 className="text-start"></h3> 
           <input
             type="text"
-            className="w-full focus:outline-none shadow-teal-700 placeholder:text-red-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600 "
+            className="focus:outline-none shadow-teal-700 placeholder:text-red-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600 "
             value={userMessage}
             onChange={(e) => setUserMessage(e.target.value)}
           />
