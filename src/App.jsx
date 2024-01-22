@@ -73,17 +73,7 @@ function App() {
   }}
 />
        </label>
-        <button
-          className="shadow-md placeholder:text-blue-900 rounded-md  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
-          onClick={sendMessage}
-          onKeyDown={(e) => {
-            if (e.key === "Enter") {
-              sendMessage();
-            }
-          }}
-        >
-        <h3 className="p-5 text-blue-900">Send</h3>
-        </button>
+       
       </div>
     </div>
   );
