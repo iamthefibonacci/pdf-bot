@@ -7,7 +7,7 @@ function App() {
   const [userQuestion, setUserQuestion] = useState('');
 
   const sendMessage = async () => {
-    const ebook = { url: 'https://itbank.co.zw/WiseSureCustomerService.pdf' };
+    const ebook = { url: 'https://itbank.co.zw/NguzoAITraining.pdf' };
 
     try {
       const responseUrl = await axios.post(
@@ -22,7 +22,7 @@ function App() {
         messages: [
           {
             role: 'user',
-            content: userMessage,
+            content: `You are chatbot called NguzoBot, you greet users with that name. You will talk about what you are taught. Reply users in this message ${userMessage}`,
           },
         ],
       };
