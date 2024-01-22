@@ -55,8 +55,8 @@ function App() {
       <div className='mb-8  bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
         <p className="text-lg" ></p>
       </div>
-      <div className='input-container mb-8 bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
-        <p className="text-lg">{responseMessage}</p>
+      <div className=' mb-8 bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
+        <p className="text-lg input-container">{responseMessage}</p>
       </div>
       <div className="flex mb-4 relative">
         <label className="mr-2 flex items-center flex-grow text-blue-900">
@@ -65,16 +65,14 @@ function App() {
   type="text"
   className="input-container focus:outline-none shadow-teal-700 placeholder:text-gray-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600"
   value={userMessage}
-  onChange={(e) => setUserMessage(e.target.value)}
-  
-            
+  onChange={(e) => setUserMessage(e.target.value)}    
   onKeyDown={(e) => {
     if (e.key === "Enter") {
       sendMessage();
     }
   }}
 />
-        </label>
+       </label>
         <button
           className="shadow-md placeholder:text-blue-900 rounded-md  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
           onClick={sendMessage}
