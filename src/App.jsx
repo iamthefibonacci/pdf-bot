@@ -47,7 +47,6 @@ function App() {
       <div className="text-center mb-4 text-3xl text-blue-900">
         <br/>
         <p>NguzoAI ChatBot</p> 
-        <p>Talk to me and ask me anything about NguzoAI Company.</p>
       </div>
       <div className="text-center mb-4 text-1xl text-blue-900">
         <br/>
