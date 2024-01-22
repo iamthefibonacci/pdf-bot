@@ -62,11 +62,11 @@ function App() {
         <label className="mr-2 flex items-center flex-grow text-blue-900">
          <h3 className="text-start"></h3> 
           <input
-            type="text"
-            className="w-full focus:outline-none shadow-teal-700 placeholder:text-red-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600 "
-            value={userMessage}
-            onChange={(e) => setUserMessage(e.target.value)}
-          />
+  type="text"
+  className="input-container focus:outline-none shadow-teal-700 placeholder:text-gray-200 text-sm text-white p-5 pr-16 rounded-xl bg-neutral-600"
+  value={userMessage}
+  onChange={(e) => setUserMessage(e.target.value)}
+/>
         </label>
         <button
           className="shadow-md placeholder:text-blue-900 rounded-md  active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
