@@ -44,16 +44,16 @@ function App() {
 
   return (
     <div className="container mx-auto p-4 space-x-10 flex-col">
-      <div className="text-center mb-4 text-3xl text-blue-900">
+      <div className="text-center mb-4 text-5xl text-blue-900">
         <br/>
         <p>NguzoAI ChatBot</p> 
       </div>
       <div className="text-center mb-4 text-1xl text-blue-900">
         <br/>
-        <p>Talk to me and ask me anything about NguzoAI Company.</p>
+        <p>Talk to me and ask me anything about NguzoAI.</p>
       </div>
       <div className='mb-8  bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
-        <p className="text-lg" >{userQuestion}</p>
+        <p className="text-lg" ></p>
       </div>
       <div className='mb-8   bg-white p-4 rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300'>
         <p className="text-lg">{responseMessage}</p>
