@@ -46,7 +46,7 @@ function App() {
     <div className="container mx-auto p-4 space-x-10 flex-col">
       <div className="text-center mb-4 text-5xl text-blue-900">
         <br/>
-        <p>NguzoAI ChatBot</p> 
+        <p><b><span className="underline">NguzoAI ChatBot</span></b></p> 
       </div>
       <div className="text-center mb-4 text-1xl text-blue-900">
         <br/>
